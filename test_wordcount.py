@@ -43,10 +43,9 @@ def test_consume_3():
     assert words == 3
     assert lines == 1
    
-
 def test_daaaangerous():
     try:
         wordcount_lib.daaaangerous()
-        assert false
+        assert False
     except ZeroDivisionError as e:
-        assert True, "should not devide by 0" 
+        assert True, 'Should throw dividebyzero'
